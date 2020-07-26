@@ -1,0 +1,154 @@
+<html>
+    <head>
+        <title>College Application</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Application</h1>
+        <img src="assets/Unknown.png">
+
+        <form>
+            <h2>Write About</h2>
+            <h3>Apply to clown college:</p>
+
+            <label for="question1">What are your qualifications?</label>
+            <br>
+            <input type="text" name="first" value="Worked at...Volunteered...">
+
+            <br><br>
+            <label for="question2">Describe a time you overcame a challenge:</label>
+            <br>
+            <input type="text" name="second" value="One time...">
+
+            <br><br>
+            <label for="question3">What are some of your strengths and weaknesses?</label>
+            <br>
+            <input type="text" name="third" value="Punctuality, Kindess...">
+
+            <br><br>
+            <label for="question4">Who is your clown persona?</label>
+            <br>
+            <input type="text" name="fourth" value="Name, Age, Gender...">
+
+            <br><br>
+            <label for="question5">Describe yourself in three words. Explain.</label>
+            <br>
+            <input type="text" name="fifth" value="Three words are...because...">
+        </form>
+
+        <br><br>
+
+<!-- Login Page -->
+        <h2>Profile</h2>
+        <form>
+            <label for="first-name">First Name</label>
+            <input placeholder="John" type="name">
+
+            <label for="last-name">Last Name</label>
+            <input placeholder="Smith" type="name">
+
+            <br><br>
+            <label for="age">Age</label>
+            <input placeholder="100" type="number">
+
+            <label for="birthday">Birthday</label>
+            <input placeholder="01/01/2001" type="date">
+
+            <br><br>
+            <label for="email">Email</label>
+            <input placeholder="email" type="email">
+
+            <label for="password">Password</label>
+            <input  placeholder="password" type="password" name="password">
+        </form>
+
+        <!-- Radio -->
+        <form>
+            <h4>Gender</h4>
+            <label for="gender">Female</label>
+            <input type="radio" name="gender">
+
+            <label for="gender">Male</label>
+            <input type="radio" name="gender">
+
+            <label for="gender">Other</label>
+            <input type="radio" name="gender">
+        </form>
+
+        <br>
+
+        <!-- max charcaters -->
+        <form>
+            <label for="bio">Create  a bio with less than 100 characters:</label>
+            <input type="text" name="bio" min="1" maxlength="100" required>
+        </form>
+
+        <br>
+<!-- checkboxes-->
+        <form>
+            <h4>Notifications:</h4>
+            <label for="note">Updates</label>
+            <input type="checkbox" name="note">
+
+            <label for="note">Newsletter</label>
+            <input type="checkbox" name="note">
+
+            <label for="note">Promos</label>
+            <input type="checkbox" name="note">
+        </form>
+
+
+        <br><br>
+
+<!-- datalist -->
+        <form>
+            <h2>Class Option</h2>
+            <label for="class">Ideal Class</label>
+            <input type="text" name="class" list="classes">
+        </form>
+
+        <form>
+            <!-- option or select works-->
+            <datalist>
+                <option value="Improv"></option>
+                <option value="Makeup and Fashion"></option>
+                <option value="Stage and Props"></option>
+                <option value="Personality"></option>
+            </datalist>
+        </form>
+
+        <br>
+
+        <h2>Feedback</h2>
+        <!-- how to use range -->
+                <form>
+                    <label for="level">Satisfactory Level (0-5)</label>
+                    <!-- number before range gives text box, without gives slider -->
+                    <input type="number" name="level" type="range" min="0" max="5">
+        
+                    <!-- textarea -->
+                    <br><br>
+                    <label for="questions">Questions or Concerns?</label>
+                    <br>
+                    <textarea rows="5" cols="15"></textarea>
+        
+                </form>
+
+
+                <form>
+                    <!-- 0-9 what values 14,16 number inbetween 14 and 16 -->
+                    <label for="payment">Credit Card Number</label>
+                    <input type="text" name="payment required" pattern="[0-9]{14,16"}>
+                </form>
+        <br>
+
+        <!-- send form -->
+        <form method="get" action="./board.html">
+            <input type="submit" value="submit">
+        </form>
+
+    </body>
+</html>
+
+<!-- action="./board.html method="POST" sends data to page -->
